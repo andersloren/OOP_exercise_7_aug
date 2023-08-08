@@ -18,7 +18,6 @@ public class BankAccountTest {
                 () -> bankAccount.setBalance(balanceSet));
     }
 
-
     @ParameterizedTest
     @CsvSource({
             // balance, deposit, expected

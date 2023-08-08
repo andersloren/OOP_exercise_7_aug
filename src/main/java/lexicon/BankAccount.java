@@ -7,7 +7,7 @@ public class BankAccount {
     private String customerName;
     private String email;
     private String phoneNumber;
-    private static int counter = 1;
+    private static int counter = 0;
 
     // Telescope constructor
     public BankAccount() {
@@ -15,7 +15,7 @@ public class BankAccount {
 
     // Constructor
     public BankAccount(double balance, String customerName, String email, String phoneNumber) {
-        this.accountNumber = counter++;
+        accountNumber = ++counter;
         this.balance = balance;
         this.customerName = customerName;
         this.email = email;

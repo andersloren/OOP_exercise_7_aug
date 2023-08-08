@@ -7,7 +7,9 @@ public class App
         System.out.println(bankAccount1.bankAccountInfo());
         BankAccount bankAccount2 = new BankAccount(200, "Erik", "erik.svensson@gmail.com", "0700000001");
         System.out.println(bankAccount2.bankAccountInfo());
-
-
+        bankAccount1.deposit(120);
+        System.out.println(bankAccount1.getBalance());
+        bankAccount1.withdraw(400);
+        System.out.println(bankAccount1.getBalance());
     }
 }
